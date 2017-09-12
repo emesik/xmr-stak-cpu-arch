@@ -14,7 +14,7 @@ source=('git+https://github.com/fireice-uk/xmr-stak-cpu.git'
 sha256sums=('SKIP'
             'c973333e53efa4a94042f5b7c5d5d1b6995bb2cf261ac0ac7f735d93d795a6a6'
             '008318b504bcab7173628e181f5cf4fa1af9cfd683430723744f1c9cf50621ba'
-            'e66be079d1792ffe0b804d8b2d85e9ca86723dfe66e4f62cf91c223a7b74ab98')
+            '159c2ca7df5bfc7acd00622f565ca264f943bcff35d28ae24664df3d291a9118')
 install=xmr-stak-cpu.install
 
 pkgver() {
