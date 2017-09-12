@@ -1,0 +1,13 @@
+diff --git a/config.txt b/config.txt
+index 22a857e..e9d5930 100644
+--- a/config.txt
++++ b/config.txt
+@@ -165,7 +165,7 @@ null,
+  * output_file  - This option will log all output to a file.
+  *
+  */
+-"output_file" : "",
++"output_file" : "/var/log/monero/xmr-stak-cpu.log",
+ 
+ /*
+  * Built-in web server

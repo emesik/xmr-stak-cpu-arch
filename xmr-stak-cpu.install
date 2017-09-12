@@ -1,0 +1,23 @@
+create_user() {
+  getent passwd monero &>/dev/null || {
+    echo -n ">>> Creating monero user... "
+    useradd --system --user-group -m --home /var/lib/monero monero
+    echo "done"
+  } # NOTE: we do not autoremove user due to security concerns (Arch policy)
+  mkdir -p /var/log/monero && chown monero:monero /var/log/monero
+}
+
+post_install() {
+  create_user
+}
+
+post_upgrade() {
+  create_user
+  echo ">>> IMPORANT NOTICE:"
+  echo ">>> If you were previously using bitmonero-git, please perform"
+  echo ">>> the following before starting monerod or monerod systemd unit:"
+  echo ""
+  echo "$ sudo mv /var/lib/bitmonero /var/lib/monero/"
+  echo "$ sudo chown -R monero:monero  /var/lib/monero/"
+  echo ""
+}
