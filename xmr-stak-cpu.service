@@ -4,7 +4,7 @@ Description=XMR-Stak-CPU miner
 [Service]
 Type=simple
 User=monero
-WorkingDirectory=/srv/xmr
+WorkingDirectory=/var/lib/monero
 ExecStart=/usr/bin/xmr-stak-cpu /etc/xmr-stak-cpu.json
 
 [Install]

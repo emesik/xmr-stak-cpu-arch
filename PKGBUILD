@@ -1,6 +1,6 @@
 pkgname=xmr-stak-cpu-git
 pkgver=r242.f54e02f
-pkgrel=3
+pkgrel=4
 pkgdesc="Monero CPU miner"
 arch=('x86_64')
 url="https://github.com/nicehash/xmr-stak-cpu"
