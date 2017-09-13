@@ -6,7 +6,7 @@ arch=('x86_64')
 url="https://github.com/nicehash/xmr-stak-cpu"
 license=('GPL3')
 makedepends=('git' 'cmake')
-depends=('libmicrohttpd' 'openssl')
+depends=('libmicrohttpd' 'openssl' 'hwloc')
 source=('git+https://github.com/fireice-uk/xmr-stak-cpu.git'
         'no-donate.patch'
         'config-log.patch'
