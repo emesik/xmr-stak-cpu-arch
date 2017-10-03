@@ -16,6 +16,7 @@ sha256sums=('SKIP'
             '008318b504bcab7173628e181f5cf4fa1af9cfd683430723744f1c9cf50621ba'
             '159c2ca7df5bfc7acd00622f565ca264f943bcff35d28ae24664df3d291a9118')
 install=xmr-stak-cpu.install
+backup=('etc/xmr-stak-cpu.json')
 
 pkgver() {
     cd "$srcdir/xmr-stak-cpu"
